@@ -1,0 +1,42 @@
+{
+  "name": "tea-rest-plugin-mysql",
+  "version": "1.0.4",
+  "description": "sequlize as store, base on tea-rest",
+  "main": "index.js",
+  "scripts": {
+    "_test": "mocha",
+    "test": "export NODE_ENV=test && nyc --reporter=lcov --reporter=text-summary npm run _test",
+    "lint": "eslint {./index.js,./lib,./test} && echo '\u001b[32m\u001b[1mEslint validate success.\u001b[22m\u001b[39m'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tea-node/tea-rest-plugin-mysql.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "tea-rest",
+    "mysql",
+    "sequelize"
+  ],
+  "author": "baiyu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tea-node/tea-rest-plugin-mysql/issues"
+  },
+  "homepage": "https://github.com/tea-node/tea-rest-plugin-mysql#readme",
+  "devDependencies": {
+    "codecov": "^1.0.1",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.15.0",
+    "mocha": "^3.0.2",
+    "nyc": "^10.0.0",
+    "tea-rest": "^1.1.7"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "mysql": "^2.16.0",
+    "sequelize": "3.24.3"
+  }
+}
