@@ -2,15 +2,15 @@ const { env } = process;
 
 module.exports = {
   db: {
-    host: env.ORT_HOST || '127.0.0.1',
-    port: env.ORT_PORT || 3306,
-    name: env.ORT_NAME || 'open_rest',
+    host: env.TR_HOST || env.TR_MYSQL_HOST || '127.0.0.1',
+    port: env.TR_PORT || env.TR_MYSQL_PORT || 3306,
+    name: env.TR_NAME || env.TR_MYSQL_NAME || 'tea_rest',
     encode: {
       set: 'utf8',
       collation: 'utf8_general_ci',
     },
-    user: env.ORT_USER || 'root',
-    pass: env.ORT_PASS || '',
+    user: env.TR_USER || env.TR_MYSQL_USER || 'root',
+    pass: env.TR_PASS || env.TR_MYSQL_PASS || '',
     dialect: 'mysql',
     dialectOptions: {
       supportBigNumbers: true,

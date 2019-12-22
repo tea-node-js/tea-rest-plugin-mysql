@@ -1,10 +1,9 @@
-const Sequelize = require('sequelize');
 const _ = require('lodash');
 
-module.exports = sequelize => (
+module.exports = (sequelize, DataTypes) => (
   _.extend(sequelize.define('user', {
     id: {
-      type: Sequelize.type('hello.world'),
+      type: DataTypes.type('hello.world'),
       primaryKey: true,
       autoIncrement: true,
     },

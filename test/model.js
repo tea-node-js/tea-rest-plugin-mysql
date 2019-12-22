@@ -99,7 +99,9 @@ describe('lib/model', () => {
 
 
     it('reset ENV isnt production', (done) => {
-      getModel = model({}, `${__dirname}/app`, rest);
+      getModel = model({
+        dialect: 'mysql',
+      }, `${__dirname}/app`, rest);
       assert.ok(getModel.reset instanceof Function);
       assert.equal(3, _.keys(getModel()).length);
 
@@ -112,7 +114,9 @@ describe('lib/model', () => {
     it('reset ENV is production', (done) => {
       rest.utils.isProd = true;
       getModel.reset();
-      getModel = model({}, `${__dirname}/app`, rest);
+      getModel = model({
+        dialect: 'mysql',
+      }, `${__dirname}/app`, rest);
       assert.equal(null, getModel.reset);
       assert.equal(3, _.keys(getModel()).length);
       done();
