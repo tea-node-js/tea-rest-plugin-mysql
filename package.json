@@ -1,6 +1,6 @@
 {
   "name": "tea-rest-plugin-mysql",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "sequlize as store, base on tea-rest",
   "main": "index.js",
   "scripts": {
