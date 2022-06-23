@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/tea-node-js/tea-rest-plugin-mysql#readme",
   "devDependencies": {
-    "codecov": "^1.0.1",
+    "codecov": "^3.8.3",
     "eslint": "^5.12.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.15.0",
